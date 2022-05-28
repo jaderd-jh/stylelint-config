@@ -34,10 +34,10 @@
     "stylelint-scss": "^4.2.0"
   },
   "devDependencies": {
-    "@jhqn/eslint-config": "^0.0.6",
-    "bumpp": "^7.1.1",
-    "eslint": "^8.16.0",
-    "stylelint": "^14.8.5",
-    "typescript": "^4.7.2"
+    "@jhqn/eslint-config": "0.0.6",
+    "bumpp": "7.1.1",
+    "eslint": "8.16.0",
+    "stylelint": "14.8.5",
+    "typescript": "4.7.2"
   }
 }
