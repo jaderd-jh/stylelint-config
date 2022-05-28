@@ -12,16 +12,13 @@ module.exports = {
     'stylelint-no-unsupported-browser-features',
   ],
   rules: {
+    'max-line-length': null,
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
     'scss/at-import-partial-extension': 'always',
     'scss/at-import-partial-extension-whitelist': ['scss'],
     'css-modules/composed-class-names': true,
-    'css-modules/css-variables': [true, {
-      resolve: {
-        extensions: ['.css', '.scss'],
-      },
-    }],
+    'css-modules/css-variables': null,
     'plugin/declaration-block-no-ignored-properties': true,
     'no-descending-specificity': [
       true,
