@@ -60,6 +60,8 @@ module.exports = {
             ignorePseudoClasses: ['global', 'deep'],
           },
         ],
+        // conflict when using style in template with prettier-vue/prettier
+        'declaration-block-trailing-semicolon': null,
       },
     },
   ],
