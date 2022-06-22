@@ -16,7 +16,7 @@
   "scripts": {
     "lint": "eslint .",
     "release": "bumpp package.json --commit --push --tag && pnpm publish --access public",
-    "postpublish": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add CHANGELOG.md && git commit -am \"chore(docs): update CAHNGELOG.md\" && git push"
+    "postpublish": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2 && git add CHANGELOG.md && git commit -am \"chore(docs): update CAHNGELOG.md\" && git push"
   },
   "peerDependencies": {
     "stylelint": "^14.0.0"

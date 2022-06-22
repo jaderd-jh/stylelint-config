@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/jaderd-jh/stylelint-config/compare/v0.0.3...v0.0.4) (2022-06-22)
+
+
+### Features
+
+* adjust `selector-pseudo-class-no-unknown` ([9039ac1](https://github.com/jaderd-jh/stylelint-config/commit/9039ac1cdd27493b60587f8cf718a33682d9ea71))
+
+
+
 ## [0.0.3](https://github.com/jaderd-jh/stylelint-config/compare/v0.0.2...v0.0.3) (2022-06-10)
 
 
