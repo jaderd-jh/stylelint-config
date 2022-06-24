@@ -19,7 +19,7 @@
     "postpublish": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2 && git add CHANGELOG.md && git commit -am \"chore(docs): update CAHNGELOG.md\" && git push"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.0"
+    "stylelint": "^14.9.0"
   },
   "dependencies": {
     "postcss-html": "^1.4.1",
