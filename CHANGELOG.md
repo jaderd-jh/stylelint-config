@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/jaderd-jh/stylelint-config/compare/v0.0.4...v0.0.5) (2022-06-24)
+
+
+### Bug Fixes
+
+* upgrade peerDependencies `stylelint` to v14.9.0 ([0d7bbf5](https://github.com/jaderd-jh/stylelint-config/commit/0d7bbf5bc2948e41862a1f5bea4f428bd50a7d98))
+
+
+
 ## [0.0.4](https://github.com/jaderd-jh/stylelint-config/compare/v0.0.3...v0.0.4) (2022-06-22)
 
 
