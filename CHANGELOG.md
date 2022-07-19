@@ -1,3 +1,12 @@
+## [0.0.6](https://github.com/jaderd-jh/stylelint-config/compare/v0.0.5...v0.0.6) (2022-07-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-standard-scss to v5 ([#14](https://github.com/jaderd-jh/stylelint-config/issues/14)) ([b852487](https://github.com/jaderd-jh/stylelint-config/commit/b8524873eb092957838a722823e38986783be603))
+
+
+
 ## [0.0.5](https://github.com/jaderd-jh/stylelint-config/compare/v0.0.4...v0.0.5) (2022-06-24)
 
 
