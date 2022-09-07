@@ -1,3 +1,14 @@
+# [0.1.0](https://github.com/jaderd-jh/stylelint-config/compare/v0.0.6...v0.1.0) (2022-09-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-recommended to v9 ([#17](https://github.com/jaderd-jh/stylelint-config/issues/17)) ([5071d52](https://github.com/jaderd-jh/stylelint-config/commit/5071d52f7b00d0b97ef2753d48fb54e134766aac))
+* **deps:** update dependency stylelint-config-standard to v27 ([#18](https://github.com/jaderd-jh/stylelint-config/issues/18)) ([ab38639](https://github.com/jaderd-jh/stylelint-config/commit/ab38639e9472b12ac3f2a88475fb34e80d58218e))
+* **deps:** update dependency stylelint-config-standard to v28 ([#20](https://github.com/jaderd-jh/stylelint-config/issues/20)) ([159dbcf](https://github.com/jaderd-jh/stylelint-config/commit/159dbcfac0667c80dffdd8c5a17b3c105d347c42))
+
+
+
 ## [0.0.6](https://github.com/jaderd-jh/stylelint-config/compare/v0.0.5...v0.0.6) (2022-07-19)
 
 
