@@ -1,3 +1,12 @@
+## [0.1.1](https://github.com/jaderd-jh/stylelint-config/compare/v0.1.0...v0.1.1) (2022-11-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-no-unsupported-browser-features to v6 ([#22](https://github.com/jaderd-jh/stylelint-config/issues/22)) ([e3b343e](https://github.com/jaderd-jh/stylelint-config/commit/e3b343ee67a386885fcbad8d1b8345f452e2f8d0))
+
+
+
 # [0.1.0](https://github.com/jaderd-jh/stylelint-config/compare/v0.0.6...v0.1.0) (2022-09-07)
 
 
