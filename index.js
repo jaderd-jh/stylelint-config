@@ -43,6 +43,7 @@ module.exports = {
     // kebab-case(组件库常用 or snake_case(方便使用css modules)
     'selector-class-pattern': '^([a-z][a-z0-9]*)((_|__|-|--)[a-z0-9]+)*$',
     'indentation': [2, { baseIndentLevel: 1 }],
+    'declaration-property-value-no-unknown': true,
   },
   overrides: [
     {

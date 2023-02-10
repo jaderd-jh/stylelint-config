@@ -1,3 +1,3 @@
 module.exports = {
-  extends: '@jhqn/eslint-config-basic',
+  extends: '@jhqn/eslint-config-vue',
 }
