@@ -4,6 +4,7 @@ module.exports = {
     'stylelint-config-recommended',
     'stylelint-config-standard',
     'stylelint-config-standard-scss',
+    'stylelint-stylistic/config',
   ],
   plugins: [
     'stylelint-css-modules',
