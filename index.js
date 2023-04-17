@@ -64,6 +64,7 @@ module.exports = {
         ],
         // conflict when using style in template with prettier-vue/prettier
         'declaration-block-trailing-semicolon': null,
+        'stylistic/declaration-block-trailing-semicolon': null,
       },
     },
   ],
