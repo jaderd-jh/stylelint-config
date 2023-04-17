@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/jaderd-jh/stylelint-config/compare/v0.3.0...v0.3.1) (2023-04-17)
+
+
+### Bug Fixes
+
+* resolve conflict with prettier-vue/prettier ([a1841ab](https://github.com/jaderd-jh/stylelint-config/commit/a1841ab402ef7b779544f5755f9e59f1fc97a129))
+
+
+
 # [0.3.0](https://github.com/jaderd-jh/stylelint-config/compare/v0.2.0...v0.3.0) (2023-04-04)
 
 
