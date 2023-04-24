@@ -33,7 +33,7 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
     "stylelint-no-unsupported-browser-features": "^6.1.0",
     "stylelint-scss": "^4.6.0",
-    "stylelint-stylistic": "^0.3.1"
+    "stylelint-stylistic": "^0.4.0"
   },
   "devDependencies": {
     "@jhqn/eslint-config-vue": "^0.3.2",

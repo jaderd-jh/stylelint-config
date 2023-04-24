@@ -35,8 +35,8 @@ dependencies:
     specifier: ^4.6.0
     version: 4.6.0(stylelint@15.4.0)
   stylelint-stylistic:
-    specifier: ^0.3.1
-    version: 0.3.1(stylelint@15.4.0)
+    specifier: ^0.4.0
+    version: 0.4.0(stylelint@15.4.0)
 
 devDependencies:
   '@jhqn/eslint-config-vue':
@@ -3952,8 +3952,8 @@ packages:
       stylelint: 15.4.0
     dev: false
 
-  /stylelint-stylistic@0.3.1(stylelint@15.4.0):
-    resolution: {integrity: sha512-buq+Tk2pKGaEBkiSvWKnvA7HtWjrSJ/2RKcfh749PL1W4flzWYL3tbuEWdcDngp9AXFkUceE/Jg8ygIv3L8KXw==}
+  /stylelint-stylistic@0.4.0(stylelint@15.4.0):
+    resolution: {integrity: sha512-8x6sClY6D+wrdTZD9kEcIcyH6Qv3nXapngd8INEI0iABukdecepZcme+RpxMOJCe4ngacBZf+JlCLjDjKadBcA==}
     engines: {node: '>=14.x'}
     peerDependencies:
       stylelint: ^15.0.0
