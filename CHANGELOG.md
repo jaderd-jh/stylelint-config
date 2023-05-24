@@ -1,3 +1,13 @@
+# [0.4.0](https://github.com/jaderd-jh/stylelint-config/compare/v0.3.2...v0.4.0) (2023-05-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-standard-scss to v9 ([#44](https://github.com/jaderd-jh/stylelint-config/issues/44)) ([3894d87](https://github.com/jaderd-jh/stylelint-config/commit/3894d87377b6a37b08f7259d30649903f11f2f9b))
+* **deps:** update dependency stylelint-scss to v5 ([#45](https://github.com/jaderd-jh/stylelint-config/issues/45)) ([72005ad](https://github.com/jaderd-jh/stylelint-config/commit/72005ad530138d33117c750dedc3f59357a5f822))
+
+
+
 ## [0.3.2](https://github.com/jaderd-jh/stylelint-config/compare/v0.3.1...v0.3.2) (2023-04-24)
 
 
