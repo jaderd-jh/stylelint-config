@@ -16,14 +16,14 @@
     "lint": "eslint .",
     "stylelint": "stylelint fixtures/**/*.{css,scss,vue}",
     "release": "bumpp package.json --commit --push --tag && pnpm publish --access public",
-    "postpublish": "conventional-changelog -p angular -i CHANGELOG.md -s -r 2 && git add CHANGELOG.md && git commit -am \"chore(docs): update CAHNGELOG.md\" && git push"
+    "postpublish": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md && git commit -am \"chore(docs): update CAHNGELOG.md\" && git push"
   },
   "peerDependencies": {
-    "stylelint": "^14.9.1 || ^15.0.0"
+    "stylelint": "^15.4.0"
   },
   "dependencies": {
     "postcss-html": "^1.5.0",
-    "stylelint-config-recess-order": "^3.1.0",
+    "stylelint-config-recess-order": "^4.0.0",
     "stylelint-config-recommended": "^12.0.0",
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard": "^33.0.0",
@@ -33,16 +33,16 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
     "stylelint-no-unsupported-browser-features": "^6.1.0",
     "stylelint-scss": "^5.0.0",
-    "stylelint-stylistic": "^0.3.1"
+    "stylelint-stylistic": "^0.4.2"
   },
   "devDependencies": {
-    "@jhqn/eslint-config-vue": "^0.3.2",
+    "@jhqn/eslint-config-vue": "^0.4.10",
     "bumpp": "^9.1.0",
     "conventional-changelog-cli": "^2.2.2",
-    "eslint": "^8.39.0",
-    "sass": "^1.62.0",
-    "stylelint": "^15.6.0",
+    "eslint": "^8.41.0",
+    "sass": "^1.62.1",
+    "stylelint": "^15.6.2",
     "typescript": "^5.0.4",
-    "vue": "^3.2.47"
+    "vue": "^3.3.4"
   }
 }
