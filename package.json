@@ -1,7 +1,7 @@
 {
   "name": "@jhqn/stylelint-config",
   "version": "0.4.2",
-  "packageManager": "pnpm@8.6.9",
+  "packageManager": "pnpm@8.6.10",
   "description": "jhqn's stylelint config",
   "author": "jade-gjz",
   "license": "MIT",
