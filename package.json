@@ -47,7 +47,7 @@
   "devDependencies": {
     "@jhqn/eslint-config-vue": "^0.6.0",
     "bumpp": "^9.1.1",
-    "conventional-changelog-cli": "^3.0.0",
+    "conventional-changelog-cli": "^4.0.0",
     "eslint": "^8.45.0",
     "sass": "^1.64.1",
     "stylelint": "^15.10.2",
