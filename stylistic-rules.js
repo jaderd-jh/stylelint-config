@@ -1,4 +1,4 @@
-module.exports = {
+const stylisticRules = {
   '@stylistic/at-rule-name-case': 'lower',
   '@stylistic/at-rule-name-space-after': 'always-single-line',
   '@stylistic/at-rule-semicolon-newline-after': 'always',
@@ -64,3 +64,5 @@ module.exports = {
   '@stylistic/value-list-comma-space-before': 'never',
   '@stylistic/value-list-max-empty-lines': 0,
 }
+
+export { stylisticRules }

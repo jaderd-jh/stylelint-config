@@ -1,6 +1,6 @@
-const stylisticRules = require('./stylistic-rules')
+import { stylisticRules } from './stylistic-rules.js'
 
-module.exports = {
+export default {
   extends: [
     'stylelint-config-recess-order',
     'stylelint-config-recommended',
