@@ -69,6 +69,7 @@ export default {
           },
         ],
         '@stylistic/declaration-block-trailing-semicolon': null,
+        '@stylistic/indentation': [2, { baseIndentLevel: 0 }],
       },
     },
   ],

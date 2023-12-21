@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "lint": "eslint .",
-    "stylelint": "stylelint fixtures/**/*.{css,scss,vue}",
+    "stylelint": "stylelint fixtures/**/*.{css,scss,vue} -q",
     "update": "pnpm up -i --latest",
     "release": "bumpp"
   },
