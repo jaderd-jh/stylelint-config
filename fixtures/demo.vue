@@ -32,4 +32,5 @@
   }
 }
 
+.buz { display: inline; width: 100px; }
 </style>

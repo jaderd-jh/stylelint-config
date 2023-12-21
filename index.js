@@ -1,25 +1,24 @@
+const stylisticRules = require('./stylistic-rules')
+
 module.exports = {
   extends: [
     'stylelint-config-recess-order',
     'stylelint-config-recommended',
     'stylelint-config-standard',
     'stylelint-config-standard-scss',
-    'stylelint-stylistic/config',
+    'stylelint-config-css-modules',
   ],
   plugins: [
-    'stylelint-css-modules',
     'stylelint-scss',
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-no-unsupported-browser-features',
+    '@stylistic/stylelint-plugin',
   ],
   rules: {
-    'max-line-length': null,
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
     'scss/at-import-partial-extension': 'always',
     'scss/at-import-partial-extension-whitelist': ['scss'],
-    'css-modules/composed-class-names': true,
-    'css-modules/css-variables': null,
     'plugin/declaration-block-no-ignored-properties': true,
     'no-descending-specificity': [
       true,
@@ -43,10 +42,17 @@ module.exports = {
     'property-no-vendor-prefix': null,
     // kebab-case(组件库常用 or snake_case(方便使用css modules)
     'selector-class-pattern': '^([a-z][a-z0-9]*)((_|__|-|--)[a-z0-9]+)*$',
-    'indentation': [2, { baseIndentLevel: 1 }],
     'declaration-property-value-no-unknown': true,
+    ...stylisticRules,
   },
   overrides: [
+    {
+      files: ['**/*.{js,jsx,ts,tsx,cjs,mjs}'],
+      rules: {
+        '@stylistic/no-empty-first-line': null,
+        '@stylistic/string-quotes': 'single',
+      },
+    },
     {
       files: ['*.vue', '**/*.vue'],
       extends: [
@@ -62,11 +68,11 @@ module.exports = {
             ignorePseudoClasses: ['global', 'deep'],
           },
         ],
-        // conflict when using style in template with prettier-vue/prettier
-        'declaration-block-trailing-semicolon': null,
-        'stylistic/declaration-block-trailing-semicolon': null,
+        '@stylistic/declaration-block-trailing-semicolon': null,
       },
     },
   ],
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+  allowEmptyInput: true,
+  cache: true,
 }
