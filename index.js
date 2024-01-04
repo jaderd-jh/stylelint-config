@@ -68,6 +68,14 @@ export default {
             ignorePseudoClasses: ['global', 'deep'],
           },
         ],
+        'declaration-property-value-no-unknown': [
+          true,
+          {
+            ignoreProperties: {
+              '/.+/': '/^v-bind(.+)$/',
+            },
+          },
+        ],
         '@stylistic/declaration-block-trailing-semicolon': null,
         '@stylistic/indentation': [2, { baseIndentLevel: 0 }],
       },
