@@ -47,13 +47,13 @@
     "stylelint-scss": "^6.0.0"
   },
   "devDependencies": {
-    "@jhqn/eslint-config-vue": "^0.6.3",
+    "@jhqn/eslint-config-vue": "^0.6.4",
     "bumpp": "^9.2.1",
     "conventional-changelog-cli": "^4.1.0",
     "eslint": "^8.56.0",
     "sass": "^1.69.7",
     "stylelint": "^16.1.0",
     "typescript": "^5.3.3",
-    "vue": "^3.4.5"
+    "vue": "^3.4.6"
   }
 }

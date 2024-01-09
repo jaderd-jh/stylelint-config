@@ -20,24 +20,9 @@ export default {
     'scss/at-import-partial-extension': 'always',
     'scss/at-import-partial-extension-whitelist': ['scss'],
     'plugin/declaration-block-no-ignored-properties': true,
-    'no-descending-specificity': [
-      true,
-      {
-        severity: 'warning',
-      },
-    ],
-    'plugin/no-unsupported-browser-features': [
-      true,
-      {
-        severity: 'warning',
-      },
-    ],
-    'selector-pseudo-class-no-unknown': [
-      true,
-      {
-        ignorePseudoClasses: ['global', 'deep'],
-      },
-    ],
+    'no-descending-specificity': [true, { severity: 'warning' }],
+    'plugin/no-unsupported-browser-features': [true, { severity: 'warning' }],
+    'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global', 'deep'] }],
     'value-no-vendor-prefix': null,
     'property-no-vendor-prefix': null,
     // kebab-case(组件库常用 or snake_case(方便使用css modules)
@@ -62,22 +47,16 @@ export default {
         'stylelint-config-standard-vue/scss',
       ],
       rules: {
-        'selector-pseudo-class-no-unknown': [
-          true,
-          {
-            ignorePseudoClasses: ['global', 'deep'],
-          },
-        ],
-        'declaration-property-value-no-unknown': [
-          true,
-          {
-            ignoreProperties: {
-              '/.+/': '/^v-bind(.+)$/',
-            },
-          },
-        ],
+        'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global', 'deep'] }],
+        'declaration-property-value-no-unknown': [true, { ignoreProperties: { '/.+/': '/^v-bind(.+)$/' } }],
         '@stylistic/declaration-block-trailing-semicolon': null,
         '@stylistic/indentation': [2, { baseIndentLevel: 0 }],
+      },
+    },
+    {
+      files: ['**/*.scss', '**/*.sass', '**/*.less'],
+      rules: {
+        'plugin/no-unsupported-browser-features': [true, { ignore: ['css-nesting'] }],
       },
     },
   ],
