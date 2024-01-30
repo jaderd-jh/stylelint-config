@@ -21,7 +21,7 @@ export default {
     'scss/at-import-partial-extension-whitelist': ['scss'],
     'plugin/declaration-block-no-ignored-properties': true,
     'no-descending-specificity': [true, { severity: 'warning' }],
-    'plugin/no-unsupported-browser-features': [true, { severity: 'warning' }],
+    'plugin/no-unsupported-browser-features': [true, { ignorePartialSupport: true }],
     'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global', 'deep'] }],
     'value-no-vendor-prefix': null,
     'property-no-vendor-prefix': null,
