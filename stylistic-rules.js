@@ -63,6 +63,7 @@ const stylisticRules = {
   '@stylistic/value-list-comma-space-after': 'always-single-line',
   '@stylistic/value-list-comma-space-before': 'never',
   '@stylistic/value-list-max-empty-lines': 0,
+  '@stylistic/named-grid-areas-alignment': true,
 }
 
 export { stylisticRules }
