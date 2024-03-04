@@ -36,7 +36,7 @@
     "@stylistic/stylelint-plugin": "^2.1.0",
     "postcss-html": "^1.6.0",
     "stylelint-config-css-modules": "^4.4.0",
-    "stylelint-config-recess-order": "^4.6.0",
+    "stylelint-config-recess-order": "^5.0.0",
     "stylelint-config-recommended": "^14.0.0",
     "stylelint-config-recommended-vue": "^1.5.0",
     "stylelint-config-standard": "^36.0.0",
@@ -44,16 +44,32 @@
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-no-unsupported-browser-features": "^8.0.1",
-    "stylelint-scss": "^6.1.0"
+    "stylelint-scss": "^6.2.0"
   },
   "devDependencies": {
     "@jhqn/eslint-config-vue": "^0.6.12",
-    "bumpp": "^9.3.0",
+    "bumpp": "^9.3.1",
     "conventional-changelog-cli": "^4.1.0",
     "eslint": "^8.57.0",
     "sass": "^1.71.1",
     "stylelint": "^16.2.1",
     "typescript": "^5.3.3",
     "vue": "^3.4.21"
+  },
+  "pnpm": {
+    "overrides": {
+      "array-includes": "npm:@nolyfill/array-includes@latest",
+      "array.prototype.findlastindex": "npm:@nolyfill/array.prototype.findlastindex@latest",
+      "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@latest",
+      "array.prototype.flatmap": "npm:@nolyfill/array.prototype.flatmap@latest",
+      "es-iterator-helpers": "npm:@nolyfill/es-iterator-helpers@latest",
+      "hasown": "npm:@nolyfill/hasown@latest",
+      "isarray": "npm:@nolyfill/isarray@latest",
+      "object.assign": "npm:@nolyfill/object.assign@latest",
+      "object.entries": "npm:@nolyfill/object.entries@latest",
+      "object.fromentries": "npm:@nolyfill/object.fromentries@latest",
+      "object.groupby": "npm:@nolyfill/object.groupby@latest",
+      "object.values": "npm:@nolyfill/object.values@latest"
+    }
   }
 }
