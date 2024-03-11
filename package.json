@@ -44,16 +44,16 @@
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-no-unsupported-browser-features": "^8.0.1",
-    "stylelint-scss": "^6.2.0"
+    "stylelint-scss": "^6.2.1"
   },
   "devDependencies": {
-    "@jhqn/eslint-config-vue": "^0.6.12",
-    "bumpp": "^9.3.1",
+    "@jhqn/eslint-config-vue": "^0.6.13",
+    "bumpp": "^9.4.0",
     "conventional-changelog-cli": "^4.1.0",
     "eslint": "^8.57.0",
     "sass": "^1.71.1",
     "stylelint": "^16.2.1",
-    "typescript": "^5.3.3",
+    "typescript": "^5.4.2",
     "vue": "^3.4.21"
   },
   "pnpm": {
