@@ -50,7 +50,7 @@
     "@jhqn/eslint-config-vue": "^0.6.13",
     "bumpp": "^9.4.0",
     "conventional-changelog-cli": "^4.1.0",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "sass": "^1.71.1",
     "stylelint": "^16.2.1",
     "typescript": "^5.4.2",
