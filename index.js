@@ -17,7 +17,7 @@ export default {
   rules: {
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
-    'scss/at-import-partial-extension': 'always',
+    'scss/load-partial-extension': 'always',
     'scss/at-import-partial-extension-allowed-list': ['scss'],
     'plugin/declaration-block-no-ignored-properties': true,
     'no-descending-specificity': [true, { severity: 'warning' }],
