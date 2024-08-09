@@ -25,6 +25,8 @@ export default {
     'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global', 'deep'] }],
     'value-no-vendor-prefix': null,
     'property-no-vendor-prefix': null,
+    'no-empty-source': null,
+    'no-duplicate-selectors': null,
     // kebab-case(组件库常用 or snake_case(方便使用css modules)
     'selector-class-pattern': '^([a-z][a-z0-9]*)((_|__|-|--)[a-z0-9]+)*$',
     'declaration-property-value-no-unknown': true,

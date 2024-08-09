@@ -2,6 +2,7 @@ import jhqn from '@jhqn/eslint-config'
 
 export default jhqn(
   {
+    type: 'lib',
     lessOpinionated: true,
     stylistic: {
       overrides: {
