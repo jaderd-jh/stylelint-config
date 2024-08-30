@@ -1,7 +1,7 @@
 {
   "name": "@jhqn/stylelint-config",
   "type": "module",
-  "version": "0.6.13",
+  "version": "0.6.14",
   "packageManager": "pnpm@9.9.0",
   "description": "jhqn's stylelint config",
   "author": "jade-gjz",
