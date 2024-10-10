@@ -18,7 +18,6 @@ export default {
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': true,
     'scss/load-partial-extension': 'always',
-    'scss/at-import-partial-extension-allowed-list': ['scss'],
     'plugin/declaration-block-no-ignored-properties': true,
     'no-descending-specificity': [true, { severity: 'warning' }],
     'plugin/no-unsupported-browser-features': [true, { severity: 'warning', ignorePartialSupport: true }],
