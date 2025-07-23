@@ -30,31 +30,31 @@
     "release": "bumpp"
   },
   "peerDependencies": {
-    "stylelint": "^16.0.2"
+    "stylelint": "^16.22.0"
   },
   "dependencies": {
-    "@stylistic/stylelint-plugin": "^3.1.2",
+    "@stylistic/stylelint-plugin": "^4.0.0",
     "postcss-html": "^1.8.0",
-    "stylelint-config-css-modules": "^4.4.0",
-    "stylelint-config-recess-order": "^6.0.0",
-    "stylelint-config-recommended": "^15.0.0",
-    "stylelint-config-recommended-vue": "^1.6.0",
-    "stylelint-config-standard": "^37.0.0",
-    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-config-css-modules": "^4.5.1",
+    "stylelint-config-recess-order": "^7.1.0",
+    "stylelint-config-recommended": "^16.0.0",
+    "stylelint-config-recommended-vue": "^1.6.1",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-config-standard-scss": "^15.0.1",
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-no-unsupported-browser-features": "^8.0.4",
-    "stylelint-scss": "^6.11.0"
+    "stylelint-scss": "^6.12.1"
   },
   "devDependencies": {
-    "@jhqn/eslint-config": "^0.9.0",
-    "bumpp": "^10.0.3",
+    "@jhqn/eslint-config": "^0.9.4",
+    "bumpp": "^10.2.0",
     "conventional-changelog-cli": "^5.0.0",
-    "eslint": "^9.20.1",
-    "sass": "^1.85.0",
-    "stylelint": "^16.14.1",
-    "typescript": "^5.7.3",
-    "vue": "^3.5.13"
+    "eslint": "^9.31.0",
+    "sass": "^1.89.2",
+    "stylelint": "^16.22.0",
+    "typescript": "^5.8.3",
+    "vue": "^3.5.18"
   },
   "pnpm": {
     "overrides": {
