@@ -33,7 +33,7 @@
     "stylelint": "^16.23.1"
   },
   "dependencies": {
-    "@stylistic/stylelint-plugin": "^4.0.0",
+    "@stylistic/stylelint-plugin": "^5.0.0",
     "postcss-html": "^1.8.0",
     "stylelint-config-css-modules": "^4.5.1",
     "stylelint-config-recess-order": "^7.4.0",
