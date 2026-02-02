@@ -1,5 +1,7 @@
 {
-  extends: ["config:base", "schedule:weekly", "group:allNonMajor"],
+  extends: ["config:base", "group:allNonMajor"],
+  schedule: ["* 8-17 */10 * *"],
+  timezone: "Asia/Shanghai",
   labels: ["dependencies", "devDependencies", "peerDependencies", "optionalDependencies"],
   rangeStrategy: "bump",
   semanticCommits: "auto",
