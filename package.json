@@ -47,7 +47,7 @@
     "stylelint-scss": "^7.0.0"
   },
   "devDependencies": {
-    "@jhqn/eslint-config": "^0.11.0",
+    "@jhqn/eslint-config": "^0.11.1",
     "bumpp": "^10.4.0",
     "conventional-changelog-cli": "^5.0.0",
     "eslint": "^9.39.2",
@@ -59,13 +59,9 @@
   },
   "pnpm": {
     "overrides": {
-      "is-core-module": "npm:@nolyfill/is-core-module@^1",
       "isarray": "npm:@nolyfill/isarray@^1",
+      "stylelint-no-unsupported-browser-features>stylelint": "^17.1.0",
       "safe-buffer": "npm:@nolyfill/safe-buffer@^1"
-    },
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "unrs-resolver"
-    ]
+    }
   }
 }
