@@ -52,6 +52,7 @@
     "conventional-changelog-cli": "^5.0.0",
     "eslint": "^9.39.2",
     "eslint-plugin-vue": "^10.7.0",
+    "eslint-processor-vue-blocks": "^2.0.0",
     "sass": "^1.97.3",
     "stylelint": "^17.1.0",
     "typescript": "^5.9.3",
@@ -60,8 +61,8 @@
   "pnpm": {
     "overrides": {
       "isarray": "npm:@nolyfill/isarray@^1",
-      "stylelint-no-unsupported-browser-features>stylelint": "^17.1.0",
-      "safe-buffer": "npm:@nolyfill/safe-buffer@^1"
+      "safe-buffer": "npm:@nolyfill/safe-buffer@^1",
+      "stylelint-no-unsupported-browser-features>stylelint": "^17.1.0"
     }
   }
 }
