@@ -47,7 +47,7 @@
     "stylelint-scss": "^7.0.0"
   },
   "devDependencies": {
-    "@jhqn/eslint-config": "^0.14.0",
+    "@jhqn/eslint-config": "^0.15.0",
     "bumpp": "^11.0.0",
     "conventional-changelog-cli": "^5.0.0",
     "eslint": "^10.0.0",
