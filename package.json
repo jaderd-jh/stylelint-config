@@ -2,7 +2,7 @@
   "name": "@jhqn/stylelint-config",
   "type": "module",
   "version": "0.9.0",
-  "packageManager": "pnpm@10.33.4",
+  "packageManager": "pnpm@11.1.1",
   "description": "jhqn's stylelint config",
   "author": "jade-gjz",
   "license": "MIT",
@@ -57,12 +57,5 @@
     "stylelint": "^17.1.0",
     "typescript": "^6.0.0",
     "vue": "^3.5.27"
-  },
-  "pnpm": {
-    "overrides": {
-      "isarray": "npm:@nolyfill/isarray@^1",
-      "safe-buffer": "npm:@nolyfill/safe-buffer@^1",
-      "stylelint-no-unsupported-browser-features>stylelint": "^17.1.0"
-    }
   }
 }
