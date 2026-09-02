@@ -16,8 +16,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       postcss-html:
-        specifier: ^1.8.1
-        version: 1.8.1
+        specifier: ^2.0.0
+        version: 2.0.0(postcss@8.5.14)
       stylelint-config-css-modules:
         specifier: ^4.6.0
         version: 4.6.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
@@ -29,7 +29,7 @@ importers:
         version: 18.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       stylelint-config-recommended-vue:
         specifier: ^1.6.1
-        version: 1.6.1(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
+        version: 1.6.1(postcss-html@2.0.0(postcss@8.5.14))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       stylelint-config-standard:
         specifier: ^40.0.0
         version: 40.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
@@ -38,7 +38,7 @@ importers:
         version: 17.0.0(postcss@8.5.14)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       stylelint-config-standard-vue:
         specifier: ^1.0.0
-        version: 1.0.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
+        version: 1.0.0(postcss-html@2.0.0(postcss@8.5.14))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       stylelint-declaration-block-no-ignored-properties:
         specifier: ^3.0.0
         version: 3.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
@@ -1692,8 +1692,8 @@ packages:
     resolution: {integrity: sha512-n6l5uca7/y5joxZ3LUePhzmBFUJ+U2YWzhMa8XUTecSeSlQiZdF5XAd/Q3/WUl0VsXgUwWi8I7CNIwdI5WN1SQ==}
     engines: {node: '>=20.10'}
 
-  htmlparser2@8.0.2:
-    resolution: {integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==}
+  htmlparser2@9.1.0:
+    resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==}
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -2157,21 +2157,17 @@ packages:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
 
-  postcss-html@1.8.1:
-    resolution: {integrity: sha512-OLF6P7qctfAWayOhLpcVnTGqVeJzu2W3WpIYelfz2+JV5oGxfkcEvweN9U4XpeqE0P98dcD9ssusGwlF0TK0uQ==}
-    engines: {node: ^12 || >=14}
+  postcss-html@2.0.0:
+    resolution: {integrity: sha512-f2Rvw5FCollEfVj3wfN7JdQb7n2rNIthW+epw2EByio7M6P7RH0BTj8a/ODHrUXd0cmO7ychb6YniymV93182Q==}
+    engines: {node: ^22.12 || >=24}
+    peerDependencies:
+      postcss: ^8.5.0
 
   postcss-media-query-parser@0.2.3:
     resolution: {integrity: sha512-3sOlxmbKcSHMjlUXQZKQ06jOswE7oVkXPxmZdoB1r5l0q6gTFTQSHxNxOrCccElbW7dxNytifNEo8qidX2Vsig==}
 
   postcss-resolve-nested-selector@0.1.6:
     resolution: {integrity: sha512-0sglIs9Wmkzbr8lQwEyIzlDOOC9bGmfVKcJTaxv3vMmd3uo4o4DerC3En0bnmgceeql9BfC8hRkp7cg0fjdVqw==}
-
-  postcss-safe-parser@6.0.0:
-    resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
-    engines: {node: '>=12.0'}
-    peerDependencies:
-      postcss: ^8.3.3
 
   postcss-safe-parser@7.0.1:
     resolution: {integrity: sha512-0AioNCJZ2DPYz5ABT6bddIqlhgwhpHZ/l65YAYo0BCIn0xiDpsnTHz0gnoTGk0OXZW0JRs+cDwL8u/teRdz+8A==}
@@ -2514,10 +2510,6 @@ packages:
   tinyexec@1.2.4:
     resolution: {integrity: sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg==}
     engines: {node: '>=18'}
-
-  tinyglobby@0.2.16:
-    resolution: {integrity: sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==}
-    engines: {node: '>=12.0.0'}
 
   tinyglobby@0.2.17:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
@@ -3228,7 +3220,7 @@ snapshots:
       debug: 4.4.3(supports-color@10.2.2)
       minimatch: 10.2.5
       semver: 7.8.0
-      tinyglobby: 0.2.16
+      tinyglobby: 0.2.17
       ts-api-utils: 2.5.0(typescript@7.0.2)
       typescript: 7.0.2
     transitivePeerDependencies:
@@ -3243,7 +3235,7 @@ snapshots:
       debug: 4.4.3(supports-color@10.2.2)
       minimatch: 10.2.5
       semver: 7.8.0
-      tinyglobby: 0.2.16
+      tinyglobby: 0.2.17
       ts-api-utils: 2.5.0(typescript@7.0.2)
       typescript: 7.0.2
     transitivePeerDependencies:
@@ -4280,7 +4272,7 @@ snapshots:
 
   html-tags@5.1.0: {}
 
-  htmlparser2@8.0.2:
+  htmlparser2@9.1.0:
     dependencies:
       domelementtype: 2.3.0
       domhandler: 5.0.3
@@ -4897,20 +4889,16 @@ snapshots:
 
   pluralize@8.0.0: {}
 
-  postcss-html@1.8.1:
+  postcss-html@2.0.0(postcss@8.5.14):
     dependencies:
-      htmlparser2: 8.0.2
+      htmlparser2: 9.1.0
       js-tokens: 9.0.1
       postcss: 8.5.14
-      postcss-safe-parser: 6.0.0(postcss@8.5.14)
+      postcss-safe-parser: 7.0.1(postcss@8.5.14)
 
   postcss-media-query-parser@0.2.3: {}
 
   postcss-resolve-nested-selector@0.1.6: {}
-
-  postcss-safe-parser@6.0.0(postcss@8.5.14):
-    dependencies:
-      postcss: 8.5.14
 
   postcss-safe-parser@7.0.1(postcss@8.5.14):
     dependencies:
@@ -5109,9 +5097,9 @@ snapshots:
     optionalDependencies:
       stylelint-scss: 7.1.1(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
 
-  stylelint-config-html@1.1.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
+  stylelint-config-html@1.1.0(postcss-html@2.0.0(postcss@8.5.14))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
     dependencies:
-      postcss-html: 1.8.1
+      postcss-html: 2.0.0(postcss@8.5.14)
       stylelint: 17.11.0(supports-color@10.2.2)(typescript@7.0.2)
 
   stylelint-config-recess-order@7.7.0(stylelint-order@7.0.1(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
@@ -5128,12 +5116,12 @@ snapshots:
     optionalDependencies:
       postcss: 8.5.14
 
-  stylelint-config-recommended-vue@1.6.1(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
+  stylelint-config-recommended-vue@1.6.1(postcss-html@2.0.0(postcss@8.5.14))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
     dependencies:
-      postcss-html: 1.8.1
+      postcss-html: 2.0.0(postcss@8.5.14)
       semver: 7.8.0
       stylelint: 17.11.0(supports-color@10.2.2)(typescript@7.0.2)
-      stylelint-config-html: 1.1.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
+      stylelint-config-html: 1.1.0(postcss-html@2.0.0(postcss@8.5.14))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       stylelint-config-recommended: 18.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
 
   stylelint-config-recommended@18.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
@@ -5148,12 +5136,12 @@ snapshots:
     optionalDependencies:
       postcss: 8.5.14
 
-  stylelint-config-standard-vue@1.0.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
+  stylelint-config-standard-vue@1.0.0(postcss-html@2.0.0(postcss@8.5.14))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
     dependencies:
-      postcss-html: 1.8.1
+      postcss-html: 2.0.0(postcss@8.5.14)
       stylelint: 17.11.0(supports-color@10.2.2)(typescript@7.0.2)
-      stylelint-config-html: 1.1.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
-      stylelint-config-recommended-vue: 1.6.1(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
+      stylelint-config-html: 1.1.0(postcss-html@2.0.0(postcss@8.5.14))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
+      stylelint-config-recommended-vue: 1.6.1(postcss-html@2.0.0(postcss@8.5.14))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       stylelint-config-standard: 40.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
 
   stylelint-config-standard@40.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
@@ -5267,11 +5255,6 @@ snapshots:
   tinyexec@1.1.2: {}
 
   tinyexec@1.2.4: {}
-
-  tinyglobby@0.2.16:
-    dependencies:
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
 
   tinyglobby@0.2.17:
     dependencies:
