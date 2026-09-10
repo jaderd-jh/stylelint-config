@@ -37,8 +37,8 @@ importers:
         specifier: ^17.0.0
         version: 17.0.0(postcss@8.5.14)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       stylelint-config-standard-vue:
-        specifier: ^1.0.0
-        version: 1.0.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
+        specifier: ^2.0.0
+        version: 2.0.0(postcss-html@1.8.1)(stylelint-config-html@2.0.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)))(stylelint-config-recommended-vue@1.6.1(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)))(stylelint-config-standard-scss@17.0.0(postcss@8.5.14)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)))(stylelint-config-standard@40.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       stylelint-declaration-block-no-ignored-properties:
         specifier: ^3.0.0
         version: 3.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
@@ -2450,6 +2450,13 @@ packages:
       postcss-html: ^1.0.0
       stylelint: '>=14.0.0'
 
+  stylelint-config-html@2.0.0:
+    resolution: {integrity: sha512-Lk1NPEdUxzHkPv3ehktjpiOk4MPaqQ3H8fkvhxdWlQpaZCm9ze0SoMbRQLqkUxEMfPE1G9/x968uxm/+d2njoA==}
+    engines: {node: ^22.12 || >=24}
+    peerDependencies:
+      postcss-html: ^2.0.0
+      stylelint: '>=16.0.0'
+
   stylelint-config-recess-order@7.7.0:
     resolution: {integrity: sha512-TWRkg+BrwHOki4pi9y1emWgx6pFwZXOYZhNsbEObke/mzYUJVJvDEzJJQXhH7ajslQJGcrExy8ZvJqDiUbhFpA==}
     peerDependencies:
@@ -2489,12 +2496,19 @@ packages:
       postcss:
         optional: true
 
-  stylelint-config-standard-vue@1.0.0:
-    resolution: {integrity: sha512-wAzU7p6DSlo04pWfCbOcaMq09Nojt0FEsbdxhCBTdC7IguD9ZVl7FP/bvyA0HAHjZGC4JkW7m6WiQaoVMDSuFw==}
-    engines: {node: ^12 || >=14}
+  stylelint-config-standard-vue@2.0.0:
+    resolution: {integrity: sha512-JXHJVpIKusIS9AVJ7z82lN//2BG7N5dVs5+gzbGj51YLcJBp/B921XS2ymsrHNrQaBIiEo3oDK3gloAz0PMMeg==}
+    engines: {node: ^22.12 || >=24}
     peerDependencies:
-      postcss-html: ^1.0.0
-      stylelint: '>=14.0.0'
+      postcss-html: ^2.0.0
+      stylelint: '>=16.0.0'
+      stylelint-config-html: '>=2.0.0'
+      stylelint-config-recommended-vue: '>=2.0.0'
+      stylelint-config-standard: '>=36.0.0'
+      stylelint-config-standard-scss: '>=13.0.0'
+    peerDependenciesMeta:
+      stylelint-config-standard-scss:
+        optional: true
 
   stylelint-config-standard@40.0.0:
     resolution: {integrity: sha512-EznGJxOUhtWck2r6dJpbgAdPATIzvpLdK9+i5qPd4Lx70es66TkBPljSg4wN3Qnc6c4h2n+WbUrUynQ3fanjHw==}
@@ -3137,8 +3151,8 @@ snapshots:
 
   '@stylistic/eslint-plugin@5.10.0(eslint@10.3.0(jiti@2.7.0)(supports-color@10.2.2))':
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.3.0(jiti@2.7.0)(supports-color@10.2.2))
-      '@typescript-eslint/types': 8.59.3
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.3.0(jiti@2.7.0)(supports-color@10.2.2))
+      '@typescript-eslint/types': 8.70.0
       eslint: 10.3.0(jiti@2.7.0)(supports-color@10.2.2)
       eslint-visitor-keys: 4.2.1
       espree: 10.4.0
@@ -3298,7 +3312,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.70.0
       debug: 4.4.3(supports-color@10.2.2)
       minimatch: 10.2.5
-      semver: 7.8.0
+      semver: 7.8.5
       tinyglobby: 0.2.17
       ts-api-utils: 2.5.0(typescript@7.0.2)
       typescript: 7.0.2
@@ -3318,7 +3332,7 @@ snapshots:
 
   '@typescript-eslint/utils@8.70.0(eslint@10.3.0(jiti@2.7.0)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@7.0.2)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.9.1(eslint@10.3.0(jiti@2.7.0)(supports-color@10.2.2))
+      '@eslint-community/eslint-utils': 4.10.1(eslint@10.3.0(jiti@2.7.0)(supports-color@10.2.2))
       '@typescript-eslint/scope-manager': 8.70.0
       '@typescript-eslint/types': 8.70.0
       '@typescript-eslint/typescript-estree': 8.70.0(supports-color@10.2.2)(typescript@7.0.2)
@@ -5220,6 +5234,11 @@ snapshots:
       postcss-html: 1.8.1
       stylelint: 17.11.0(supports-color@10.2.2)(typescript@7.0.2)
 
+  stylelint-config-html@2.0.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
+    dependencies:
+      postcss-html: 1.8.1
+      stylelint: 17.11.0(supports-color@10.2.2)(typescript@7.0.2)
+
   stylelint-config-recess-order@7.7.0(stylelint-order@7.0.1(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
     dependencies:
       stylelint: 17.11.0(supports-color@10.2.2)(typescript@7.0.2)
@@ -5254,13 +5273,15 @@ snapshots:
     optionalDependencies:
       postcss: 8.5.14
 
-  stylelint-config-standard-vue@1.0.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
+  stylelint-config-standard-vue@2.0.0(postcss-html@1.8.1)(stylelint-config-html@2.0.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)))(stylelint-config-recommended-vue@1.6.1(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)))(stylelint-config-standard-scss@17.0.0(postcss@8.5.14)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)))(stylelint-config-standard@40.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)))(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
     dependencies:
       postcss-html: 1.8.1
       stylelint: 17.11.0(supports-color@10.2.2)(typescript@7.0.2)
-      stylelint-config-html: 1.1.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
+      stylelint-config-html: 2.0.0(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       stylelint-config-recommended-vue: 1.6.1(postcss-html@1.8.1)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
       stylelint-config-standard: 40.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
+    optionalDependencies:
+      stylelint-config-standard-scss: 17.0.0(postcss@8.5.14)(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2))
 
   stylelint-config-standard@40.0.0(stylelint@17.11.0(supports-color@10.2.2)(typescript@7.0.2)):
     dependencies:
@@ -5541,7 +5562,7 @@ snapshots:
       eslint-visitor-keys: 5.0.1
       espree: 11.2.0
       esquery: 1.7.0
-      semver: 7.8.0
+      semver: 7.8.5
     transitivePeerDependencies:
       - supports-color
 
