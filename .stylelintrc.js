@@ -1,3 +1,3 @@
 export default {
-  extends: "./index.js",
-};
+  extends: './index.js',
+}

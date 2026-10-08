@@ -2,5 +2,5 @@ allowBuilds:
   '@parcel/watcher': false
   unrs-resolver: false
 overrides:
-  "isarray": "npm:@nolyfill/isarray@^1"
-  "safe-buffer": "npm:@nolyfill/safe-buffer@^1"
+  isarray: 'npm:@nolyfill/isarray@^1'
+  safe-buffer: 'npm:@nolyfill/safe-buffer@^1'

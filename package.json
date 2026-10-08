@@ -16,13 +16,13 @@
   },
   "keywords": [],
   "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
   "files": [
     "index.js",
     "stylistic-rules.js"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint": "eslint --cache .",
     "stylelint": "stylelint fixtures/**/*.{css,scss,vue} -q",
@@ -53,6 +53,7 @@
     "eslint": "^10.12.0",
     "eslint-plugin-vue": "^10.11.1",
     "eslint-processor-vue-blocks": "^2.0.0",
+    "oxfmt": "^0.72.0",
     "sass": "^1.105.1",
     "stylelint": "^17.16.0",
     "typescript": "~6.0.3",

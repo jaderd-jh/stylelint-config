@@ -1,11 +1,11 @@
 {
-  extends: ["config:base", "group:allNonMajor"],
-  schedule: ["* 8-17 */10 * *"],
-  timezone: "Asia/Shanghai",
-  labels: ["dependencies", "devDependencies", "peerDependencies", "optionalDependencies"],
-  rangeStrategy: "bump",
-  semanticCommits: "auto",
-  packageRules: [
+  "extends": ["config:base", "group:allNonMajor"],
+  "schedule": ["* 8-17 */10 * *"],
+  "timezone": "Asia/Shanghai",
+  "labels": ["dependencies", "devDependencies", "peerDependencies", "optionalDependencies"],
+  "rangeStrategy": "bump",
+  "semanticCommits": "auto",
+  "packageRules": [
     {
       "matchPackagePatterns": ["*"],
       "rangeStrategy": "replace"
@@ -18,5 +18,5 @@
       "depTypeList": ["devDependencies"],
       "automerge": true
     }
-  ],
+  ]
 }
